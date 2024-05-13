@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{05D76E8D-C8C9-4F61-9A1A-29BEA7437860}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CYOA_Summative</RootNamespace>
+    <AssemblyName>CYOA Summative</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Buttonpuzzle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Buttonpuzzle.Designer.cs">
+      <DependentUpon>Buttonpuzzle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dead.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dead.Designer.cs">
+      <DependentUpon>Dead.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Death.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Death.Designer.cs">
+      <DependentUpon>Death.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entrance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Entrance.Designer.cs">
+      <DependentUpon>Entrance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fight.Designer.cs">
+      <DependentUpon>Fight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FInal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FInal.Designer.cs">
+      <DependentUpon>FInal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="g.cs" />
+    <Compile Include="HomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomePage.Designer.cs">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instructions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Instructions.Designer.cs">
+      <DependentUpon>Instructions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inv.Designer.cs">
+      <DependentUpon>Inv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Keypad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Keypad.Designer.cs">
+      <DependentUpon>Keypad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pit.Designer.cs">
+      <DependentUpon>Pit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Puzzle1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Puzzle1.Designer.cs">
+      <DependentUpon>Puzzle1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RunAway.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RunAway.Designer.cs">
+      <DependentUpon>RunAway.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Start1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Start1.Designer.cs">
+      <DependentUpon>Start1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Start2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Start2.Designer.cs">
+      <DependentUpon>Start2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Start3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Start3.Designer.cs">
+      <DependentUpon>Start3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Start4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Start4.Designer.cs">
+      <DependentUpon>Start4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="victory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="victory.Designer.cs">
+      <DependentUpon>victory.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Buttonpuzzle.resx">
+      <DependentUpon>Buttonpuzzle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dead.resx">
+      <DependentUpon>Dead.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Death.resx">
+      <DependentUpon>Death.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entrance.resx">
+      <DependentUpon>Entrance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fight.resx">
+      <DependentUpon>Fight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FInal.resx">
+      <DependentUpon>FInal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomePage.resx">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instructions.resx">
+      <DependentUpon>Instructions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inv.resx">
+      <DependentUpon>Inv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Keypad.resx">
+      <DependentUpon>Keypad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pit.resx">
+      <DependentUpon>Pit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Puzzle1.resx">
+      <DependentUpon>Puzzle1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RunAway.resx">
+      <DependentUpon>RunAway.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Start1.resx">
+      <DependentUpon>Start1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Start2.resx">
+      <DependentUpon>Start2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Start3.resx">
+      <DependentUpon>Start3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Start4.resx">
+      <DependentUpon>Start4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="victory.resx">
+      <DependentUpon>victory.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e68f38dc14e7a7247fd05cbc34cd4870.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e68f38dc14e7a7247fd05cbc34cd4870 copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e68f38dc14e7a7247fd05cbc34cd4870 copy1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\67732a5bc66b541c5d06e3b2281a262a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\block.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8f9c27de49366b1f19a3ef0418b320ac.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8f9c27de49366b1f19a3ef0418b320ac1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chloroform.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled_Artwork.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hallway3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pit1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\start4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5fa183f3dc0a2543091950.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monster.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blank wall1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monster copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monster2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\start4f.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clue1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backkey.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\worn-steel-texture-metallic-scratched-background-89024615.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\final.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\final1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minotaur.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\speech2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\speech3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\speech4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wall.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
